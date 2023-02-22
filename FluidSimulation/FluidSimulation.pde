@@ -3,7 +3,7 @@
    float t = 0;
 
    void settings() {
-    size(800, 800);
+    size(1000, 1000);
   }
 
    void setup() {
@@ -22,7 +22,7 @@
     for (int i = -1; i <= 1; i++) {
       for (int j = -1; j <= 1; j++) {
           if (mousePressed && mouseButton == LEFT) {
-        fluid.addDensity(cx + i, cy + j, random(99999, 999999));
+        fluid.addDensity(cx + i, cy + j, random((i+j)*(i+j)*500, (i+j)*(i+j)*1500));
          }
       }
     }
