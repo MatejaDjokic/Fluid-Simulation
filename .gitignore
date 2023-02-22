@@ -1,2 +1,6 @@
 *.exe
 *.dll
+*.jsa
+*.properties
+*.policy
+*.jmod
